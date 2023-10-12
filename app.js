@@ -77,5 +77,8 @@ async function realize(id){
         Authorization:`Basic ${btoa("Kajetan:kajtulasty12")}`
     }
     })
+    const json = await data.json()
+    console.log(json)
+    window.alert("Pomyślnie zrealizowano")
     getOrders()
 }

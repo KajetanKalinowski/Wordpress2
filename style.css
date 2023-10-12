@@ -8,6 +8,7 @@
     "divlist divbuttons" ;
     grid-template-columns: 60% 40%;
     grid-template-rows: 80% 20%;
+    margin: 5px;
 }
 .divlist{
     grid-area: divlist;
@@ -27,4 +28,9 @@
 .buttons{
     width: 100%;
     height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
