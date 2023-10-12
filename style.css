@@ -1,0 +1,30 @@
+.orders{
+    width:600px;
+    height: 300px;
+    border: 10px black solid;
+    display: grid;
+    grid-template-areas:
+    "divlist divcustomer"
+    "divlist divbuttons" ;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 80% 20%;
+}
+.divlist{
+    grid-area: divlist;
+    border-right: 10px black solid;
+}
+.divcustomer{
+    grid-area: divcustomer;
+    border-bottom: 10px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.divbuttons{
+    grid-template-columns: divbuttons;
+}
+.buttons{
+    width: 100%;
+    height: 100%;
+}
