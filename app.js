@@ -41,6 +41,18 @@ for(let i in json){
     button.addEventListener("click",()=>{
         realize(json[i].id)
     })
+
+    const divbarcode = document.createElement("div")
+    divbarcode.classList.add("divbarcode")
+    const code = document.createElementNS("http://www.w3.org/2000/svg","svg")
+    code.id = `barcode${json[i].id}`
+    window.setTimeout(function(){JsBarcode(`#barcode${json[i].id}`, json[i].id,{
+        displayValue: false,
+        width:5,
+        height:40
+    });},100)
+    divbarcode.appendChild(code)
+    div.appendChild(divbarcode)
     div.appendChild(divbuttons)
     divbuttons.appendChild(button)
     divcustomer.appendChild(h1)
